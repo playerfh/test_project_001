@@ -65,6 +65,10 @@ body {
 .bgImg03 {
   background-image: url("../images/03.gif");
 }
+.caption {
+  padding-top: 20px;
+  color: #99CC99;
+}
 
 @media (max-width: 640px) {
   .container {
