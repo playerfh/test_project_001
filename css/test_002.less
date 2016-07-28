@@ -1,3 +1,6 @@
+out: test_002.css, sourcemap: true, compress: true
+
+
 body {
   margin: 0px;
   padding: 20px;
@@ -17,7 +20,7 @@ body {
   flex-direction: row;
 }
 .menuFrame {
-  width: 50%;
+  width: 50vw;
   height: 240px;
   border: 2px solid #99CC99;
   padding: 20px;
@@ -70,12 +73,12 @@ body {
   color: #99CC99;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 600px) {
   .container {
     flex-direction: column;
   }
   .menuFrame {
-    width: calc(100vw - 85px);
+    width: inherit;
     /*не понял почему не 40 пикселей*/
   }
 }

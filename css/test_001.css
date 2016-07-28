@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: rgba(10,10,10,1);
+}
+/*типы объектов*/
+.menuA {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  color: #CCCCCC;
+}
+.menuA:hover {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  color: #CCCCCC;
+}
+.box100 {
+  width: 100px;
+  height: 100px;
+  --halfWidth: 50px;
+  --halfHeight: 50px;
+  background-color: rgba(200,200,200,0.8);
+}
+/*позиционирование*/
+.textCenter {
+    text-align: center;
+}
+.overflow {
+  overflow: hidden;
+}
+.posRelMiddle {
+  position: absolute;
+    top: calc(100vh / 2 - var(--halfHeight));
+    left: calc(100vw / 2 - var(--halfWidth));
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .box100 {
+    width: 80px;
+    height: 80px;
+    --halfWidth: 40px;
+    --halfHeight: 40px;
+    border-radius: 10px;
+    background-color: rgba(200,160,50,1);
+  }
+}
